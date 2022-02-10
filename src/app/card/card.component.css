@@ -1,0 +1,51 @@
+:host {
+    display: block;
+    perspective: 600px;
+}
+
+.card-container {
+    display: flex;
+    padding: 10px;
+}
+
+.card {
+    box-shadow: 10px 10px 43px -18px rgba(0, 0, 0, 0.75);
+    border-radius: 50px;
+    height: 400px;
+    width: 300px;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    background-color: black;
+}
+
+.face {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    backface-visibility: hidden;
+}
+
+.face img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.back {
+    transform: rotateY(180deg);
+    text-align: center;
+    padding-top: 15px;
+    word-wrap: break-word;
+}
+
+p {
+    color: white;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 25px;
+    padding: 10px;
+    padding-top: 15px;
+}

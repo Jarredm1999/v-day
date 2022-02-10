@@ -1,0 +1,10 @@
+<div class="card-container">
+    <div class="card" (click)="cardClicked(card)" [@cardFlip]="card.state" *ngFor="let card of cards">
+        <div class="face back">
+            <p>{{ card.cardMessage }}</p>
+        </div>
+        <div class="face front">
+            <img src="{{ card.imagePath }}" alt="Click Me">
+        </div>
+    </div>
+</div>
